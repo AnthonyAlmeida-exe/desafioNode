@@ -8,15 +8,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const repositories = [
-  {
-    id: "b2cd62c3-42e0-4f08-a337-6929dd2bb22d",
-    title: "Desafio Node.js",
-    url: "http://github.com/...",
-    techs: ["React", "Node"],
-    likes: 0,
-  },
-];
+const repositories = [];
 
 app.get("/repositories", (req, res) => {
   return res.json(repositories);
